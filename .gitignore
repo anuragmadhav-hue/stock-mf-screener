@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+*.egg-info/
+dist/
+build/
+
+# Environment & secrets
+.env
+.env.*
+credentials.json
+
+# Data files (not needed in repo)
+*.xlsx
+*.csv
+*.sqlite
+*.db
+yfinance_cache.sqlite
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
