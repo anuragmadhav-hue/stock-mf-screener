@@ -20,7 +20,7 @@ requests_cache.install_cache(
     allowable_codes=[200],
 )
 
-load_dotenv('C:\\credentials\\.env')
+load_dotenv()
 
 ANTHROPIC_API_KEY = os.environ.get('ANTHROPIC_API_KEY')
 
@@ -1283,4 +1283,4 @@ if __name__ == '__main__':
     if '--no-open' not in sys.argv:
         webbrowser.open(f'http://localhost:{port}')
     print(f'StockScope IN -> http://localhost:{port}')
-    app.run(port=port, debug=False)
+    app.run(host='0.0.0.0', port=port, debug=False)

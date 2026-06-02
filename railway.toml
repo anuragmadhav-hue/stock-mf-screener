@@ -1,0 +1,7 @@
+[build]
+buildCommand = "pip install -r requirements.txt"
+
+[deploy]
+startCommand = "python stock_screener.py --no-open"
+restartPolicyType = "ON_FAILURE"
+restartPolicyMaxRetries = 3
