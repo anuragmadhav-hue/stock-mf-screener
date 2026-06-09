@@ -25,12 +25,12 @@ from datetime import datetime
 from flask import Flask, jsonify, request as freq
 from dotenv import load_dotenv
 
-load_dotenv(r'C:\credentials\.env')
+load_dotenv()
 
 METABASE_URL    = os.getenv('METABASE_URL', '').rstrip('/')
 METABASE_API_KEY = os.getenv('METABASE_API_KEY')
 DATABASE_ID     = 113
-PORT            = 8081
+PORT            = int(os.environ.get('PORT', 8081))
 
 if not METABASE_URL:
     print("ERROR: METABASE_URL not found in C:\\credentials\\.env"); sys.exit(1)
