@@ -1,5 +1,8 @@
 flask==3.0.3
+requests==2.32.3
 requests-cache==1.2.1
 yfinance==0.2.54
 anthropic==0.40.0
 python-dotenv==1.0.1
+numpy==1.26.4
+pandas==2.2.2
